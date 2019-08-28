@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txt_celcius"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Celcius:"
+        android:textSize="20sp"
+        android:layout_margin="30dp"/>
+
+    <EditText
+        android:id="@+id/isi_celcius"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/txt_celcius"
+        android:ems="8"
+        android:layout_marginTop="20sp"
+        android:layout_marginLeft="35dp"
+        android:hint="0"/>
+
+    <Button
+        android:id="@+id/konversi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/txt_celcius"
+        android:text="Konversi"
+        android:background="@android:color/holo_purple"
+        android:textColor="@android:color/white"
+        android:textAllCaps="false"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/konversi"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/txt_Kelvin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kelvin:"
+                android:textSize="20sp"
+                android:layout_margin="30dp" />
+
+            <EditText
+                android:id="@+id/isi_kelvin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="8"
+                android:layout_marginTop="20sp"
+                android:layout_marginLeft="50dp"
+                android:hint="0" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txt_fahrenheit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fahrenheit:"
+                android:textSize="20sp"
+                android:layout_margin="30dp" />
+
+            <EditText
+                android:id="@+id/isi_fahrenheit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="8"
+                android:layout_marginTop="20sp"
+                android:layout_marginLeft="10dp"
+                android:hint="0" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/txt_reamur"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reamur"
+                android:textSize="20sp"
+                android:layout_margin="30dp" />
+
+            <EditText
+                android:id="@+id/isi_reamur"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="8"
+                android:layout_marginTop="20sp"
+                android:layout_marginLeft="40dp"
+                android:hint="0" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
